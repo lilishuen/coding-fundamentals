@@ -1,0 +1,31 @@
+.breadcrumb {  
+    list-style-type: none;
+    background-color: lightgrey;
+    padding: 15px;
+  }
+  
+ul {
+    display: flex;
+}
+  
+li {
+   color: blue;
+}
+
+.breadcrumb li:first-child::before {
+  content: none;
+}
+
+.breadcrumb li:last-child::after {
+  content: none;
+}
+
+.breadcrumb li:not(last-child)::after {
+  content: "/";
+  margin: 0 10px;
+}
+
+
+   
+
+  

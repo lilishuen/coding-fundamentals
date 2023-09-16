@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+
+<style>
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-item {
+    cursor: pointer;
+  }
+
+.submenu {    
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  border: 1px solid black;
+  border-style: solid;
+}
+
+.submenu-item1 {
+  display: block;
+  padding: 10px;
+  background-color: lightgrey;
+}
+
+.submenu-item2 {
+  display: block;
+  padding: 10px;
+  background-color:lightgrey;
+}
+
+.menu:hover .submenu {    
+  display: block;
+}
+</style>
+</head>
+<body>
+  <div class="menu">            
+    <span class="menu-item">Settings</span>
+              
+    <div class="submenu">                
+      <span class="submenu-item1">Account</span>                
+      <span class="submenu-item2">Log out</span>            
+    </div>        
+  </div>
+</body>
+</html>
